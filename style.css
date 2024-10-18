@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+body {
+  background: #bfc2d7;
+}
+.logo-sp {
+  color: #da3466;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  width: 100%;
+}
+.header ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 1rem;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+.header ul .logo a {
+  text-shadow: 0 10px 0 transparent;
+  color: black;
+}
+.logo {
+  margin-right: auto;
+}
+.header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0 5px 20px aqua;
+}
+.hero {
+  background: url("hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+.title1 {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  padding: 5rem;
+  border: 3px solid pink;
+  border-radius: 10px;
+  box-shadow: 0 0 25px gray;
+  animation: loadIn 3s ease-in-out;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title1 button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.title1 button {
+  box-shadow: 0 0 10px gray;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 10px;
+  background: #da3466;
+  color: white;
+
+  padding: 10px;
+}
+.title1 button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card h3,
+.card p,
+.card i,
+.card button {
+  color: black;
+}
+
+.card img {
+  width: 150px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+  height: 200px;
+}
+.card:hover img {
+  width: 200px;
+
+  transition: 0.5s;
+}
+.card {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #da3466;
+  padding: 1rem;
+  gap: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #da3466;
+}
+.card button {
+  color: white;
+  background: blueviolet;
+  border: none;
+  border-radius: 10px;
+  font-weght: 700;
+  width: 9rem;
+  padding: 10px;
+}
+.card button:hover {
+  box-shadow: 0 0 10px blueviolet;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.product {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.cardWrapper {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  overflow: scroll;
+}
+.title {
+  border-bottom: 3px solid #d20b97;
+  width: 10rem;
+}
